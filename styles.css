@@ -142,21 +142,6 @@ footer a {
   }
 }
 
-/* .card {
-  animation: slidein 4s;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 200px;
-  }
-
-  to {
-    margin-left: 30px;
-
-  }
-} */
-
 .card {
   animation: slide 3s;
 }
