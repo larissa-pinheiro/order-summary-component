@@ -1,0 +1,26 @@
+:root {
+  /* primary */
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  /* neutral */
+
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --pale-blue-darker: hsl(225, 45%, 86%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --hover-purple: #6761CD;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  list-style: none;
+  text-decoration: none;
+
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1rem;
+  --webkit-font-smoothing: antialiased;
+}

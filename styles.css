@@ -1,0 +1,174 @@
+body {
+  background-color: var(--pale-blue);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--very-pale-blue);
+  max-width: 375px;
+  height: 630px;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+  margin: 60px 30px;
+
+  border-radius: 20px;
+  box-shadow: 1px 15px 25px var(--pale-blue-darker);
+}
+
+.card > img {
+  display: grid;
+  top: 0;
+  max-width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.card button {
+  cursor: pointer;
+}
+
+.order-summary {
+  margin: 40px 30px 0;
+}
+
+h2, h3 {
+  font-weight: 900;
+  color: var(--dark-blue)
+}
+
+h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 0 auto;
+  max-width: 275px;
+  line-height: 30px;
+}
+
+p, span {
+  color: var(--desaturated-blue)
+}
+
+.plan {
+  margin: 40px 0;
+  display: flex;
+
+}
+
+.plan > button {
+  color: var(--bright-blue);
+  background: none;
+  border: none;
+
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: underline;
+
+  transition: 0.5s
+}
+
+.plan > button:hover {
+  color: var(--hover-purple);
+  text-decoration: none;
+  
+}
+
+.price {
+  display: grid;
+  margin: 0 55px 0 25px;
+  justify-content: center;
+}
+
+.card > button:nth-child(3) {
+  background: var(--bright-blue);
+  color: var(--very-pale-blue);
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  width: 80%;
+  height: 50px;
+
+  box-shadow: 1px 15px 25px var(--pale-blue-darker);
+  margin-bottom: 30px;
+
+  transition: 0.5s;
+}
+
+.card > button:nth-child(3):hover {
+  background-color: var(--hover-purple);
+}
+
+.card > button:nth-child(4) {
+  color: var(--desaturated-blue);
+  background: none;
+  border: none;
+
+  font-weight: 700;
+
+  transition: 0.5s;
+}
+
+.card > button:nth-child(4):hover {
+  color: var(--dark-blue);
+}
+
+footer {
+  font-size: 11px;
+  text-align: center;
+}
+
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 750px) {
+  body {
+    background-image: url(./img/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .card {
+    margin-top: 80px;
+  }
+}
+
+/* .card {
+  animation: slidein 4s;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 200px;
+  }
+
+  to {
+    margin-left: 30px;
+
+  }
+} */
+
+.card {
+  animation: slide 3s;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(25px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
